@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>  
+
+</head>
+<body>
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-1">
+                <button id="btn-1">Tabs-1</button>
+                <div id="acc">
+                    <div class="accordion-content">
+                        <button id="sub-btn" class="sub-button">sub-section</button>
+                        <p class="sub-paragraph" id="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati earum cupiditate blanditiis dignissimos officia nam quod accusamus. Sed ea voluptates porro libero eos nemo consequatur, atque, deserunt, deleniti possimus doloremque.</p>
+                    </div>
+                    <button id="btn-2" class="button-2">Section-2</button>
+                    <div class="accordion-content-1">
+                        <p class="paragraph-2" id="para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati earum cupiditate blanditiis dignissimos officia nam quod accusamus. Sed ea voluptates porro libero eos nemo consequatur, atque, deserunt, deleniti possimus doloremque.</p>
+                    </div>
+                    <button id="btn-3" class="button-3">Section-3</button>
+                    <div class="accordion-content-2">
+                        <p class="paragraph-3" id="para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati earum cupiditate blanditiis dignissimos officia nam quod accusamus. Sed ea voluptates porro libero eos nemo consequatur, atque, deserunt, deleniti possimus doloremque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-2">
+                <button id="btn-1">Tabs-2</button>
+                <div>
+                <button id="tab-btn-1">section-4</button>
+                <p class="tabs-paragraph" id="tabs-para">
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                </p>
+                </div>
+            </div>
+            
+        </div>
+          
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        $("#btn-1").click(function() {
+            $("#sub-btn").toggle();
+            $("#btn-2").toggle();
+            $("#btn-3").toggle();
+        });
+
+        $("#sub-btn").click(function() {
+            $("#sub-para").toggle();
+        });
+
+        $("#btn-2").click(function() {
+            $("#para-2").toggle();
+        });
+
+        $("#btn-3").click(function() {
+            $("#para-3").toggle();
+        });
+
+        $("#btn-1").click(function() {
+            $("#sub-para").hide();
+            $("#para-2").hide();
+            $("#para-3").hide();
+        });
+    });
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Open Sans";
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 25px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+  }
+
+  span{
+    color: red;
+  }
+
+  h1{
+    color: slategray;
+    display: flex;
+    justify-content: center;
+  }
+
+  form{
+      
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .gender-div{
+      /* display: flex; */
+      width: 100%;
+  }
+  
+  form input,
+  form button{
+      width: 100%;
+      height: 20px;
+      margin: 5px;
+  }
+
+  
+  .radio-gender{
+    display: flex;
+  }
+
+.sub1{
+      width: 100px;
+      height: 30px;
+      margin-top: 20px;
+      color: blanchedalmond;
+      background-color: black;
+  }
+
+  .radio{
+    color: black;
+    height: 10px;
+    width: 50px;
+  }
+  

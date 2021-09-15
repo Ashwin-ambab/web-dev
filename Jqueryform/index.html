@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Validation Using jQuery</h1>
+        <form id="registration" method="POST">
+           
+
+            <label for="firstname">First Name: <span>*</span></label> 
+            <small id="nameErr" style="color: red;"></small>
+            <input type="text" name="firstname" id="firstname" placeholder="Enter Username"/>
+            
+        
+            <label for="lastname">Last Name: <span>*</span></label> 
+            <small id="lastErr" style="color: red;"></small>
+            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"/>
+        
+            <label for="email">Email: <span>*</span></label> 
+            <small id="emailErr" style="color: red;"></small>
+            <input type="email" name="email" id="email" placeholder="@gmail.com"/>
+
+            <div class="gender-div">
+                <label for="gender" id="gender">Gender: <span>*</span></label> 
+                <small id="gendErr" style="color: red;"></small>
+                
+                <div class="radio-gender">
+                    <input type="radio" name="gender" id="r1" class="radio">
+                    <span class="radio">male</span>
+                    <input type="radio" name="gender" id="r2" class="radio">
+                    <span class="radio">female</span>
+                    <input type="radio" name="gender" id="r3" class="radio">
+                    <span class="radio">other</span>
+                </div>
+                
+            </div>
+            
+            <label for="phone-number">Mobile Number: <span>*</span></label>
+            <small id="phoneErr" style="color: red;"></small>
+            <input type="number" id="phonenumber">
+
+            <label for="password">Password: <span>*</span></label> 
+            <small id="passErr" style="color: red;"></small>
+            <small id="passErrLen" style="color: red;"></small>
+            <input type="password" name="password" id="password" placeholder="****"/>
+
+            <label for="password">Re-Password: <span>*</span></label> 
+            <small id="repassErr" style="color: red;"></small>
+            <input type="password" name="password" id="repassword" placeholder="****"/>
+        
+            <button type="submit" id="sub" class="sub1">Submit</button>
+        
+          </form>
+    </div>
+
+    <h3 id="result"></h3>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
